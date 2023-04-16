@@ -1,7 +1,7 @@
 import React from "react";
 
 const MainConrtainer = () => {
-  return <div>MainConrtainer</div>;
+  return <div className="col-span-11">MainConrtainer</div>;
 };
 
 export default MainConrtainer;
