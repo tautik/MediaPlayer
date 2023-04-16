@@ -1,2 +1,3 @@
-export default youtubeAPI =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=[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]";
+const API_KEY = "AIzaSyAcNv8ALN82g1rHtWK5B8h0TGJL0yzF_j8";
+export const youtubeAPI =
+  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key=AIzaSyAcNv8ALN82g1rHtWK5B8h0TGJL0yzF_j8";
