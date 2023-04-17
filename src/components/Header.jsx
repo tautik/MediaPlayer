@@ -9,6 +9,7 @@ const Header = () => {
   const toogleHamburgerHandler = () => {
     dispatch(toogleMenu());
   };
+
   return (
     <div className=" h-14  shadow-lg grid grid-flow-col ">
       <div className=" flex col-span-1 self-center">
