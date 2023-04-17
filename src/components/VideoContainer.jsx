@@ -17,9 +17,8 @@ const VideoContainer = () => {
   return (
     <div className="w-full h-[79vh] scrollbar-thin scrollbar-thumb-[#ff0000] scrollbar-track-gray-100 scrollbar-thumb-rounded-md overflow-auto   mt-8 flex flex-wrap justify-start">
       {video.map((item) => (
-        <Link to={"/watch?v=" + item.id}>
+        <Link to={"/watch?v=" + item.id} key={item.id}>
           <Card
-            key={item.id}
             channel={item.snippet?.channelTitle}
             title={item.snippet?.localized?.title}
             views={item.statistics?.viewCount}
