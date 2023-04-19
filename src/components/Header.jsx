@@ -41,7 +41,7 @@ const Header = () => {
           src={HamburgerIcon}
           alt=""
         />
-        <img className=" w-28 " src={YoutubeLogo} alt="" />{" "}
+        <h1 className="m-4 font-Poppins text-xl">VisionaryPlayer</h1>
       </div>
       <div className=" col-span-10 justify-center self-center">
         <div className="">

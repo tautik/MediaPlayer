@@ -1,16 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.toogle.toogleState);
 
   if (!isMenuOpen) return null;
 
   return (
-    <div className="col-span-2 p-6 bg-gray-50">
-      <div className="font-semibold">
+    <div className="col-span-2 p-6 bg-gray-50 flex flex-col">
+      <div className="font-semibold flex-1">
         <ul className="pt-2">
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
         </ul>
         <ul className="pt-2">
@@ -34,8 +35,13 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="">
+      {/* <div className="mt-3">
         <h1>Explore</h1>
+      </div> */}
+      <div className="justify-end  pt-4 text-xs">
+        <h1 className=" py-[2px]"> TermsPrivacy </h1>
+        <h1 className=" py-[2px]"> Policy & Safety </h1>
+        <h1 className=" py-[2px]"> About Press Copyright </h1>
       </div>
     </div>
   );
