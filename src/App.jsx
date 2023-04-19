@@ -9,7 +9,9 @@ import WatchPage from "./components/WatchPage";
 function App() {
   return (
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <div className="overflow-x-hidden">
+        <RouterProvider router={router} />
+      </div>
     </Provider>
   );
 }

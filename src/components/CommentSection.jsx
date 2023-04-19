@@ -37,7 +37,7 @@ const CommentList = ({ commentInfo }) => {
 
 const CommentSection = () => {
   return (
-    <div className=" w-[900px]">
+    <div className=" w-[1000px]">
       <h1 className="font-bold text-[1.6rem]">Comments</h1>
       <CommentList commentInfo={commentsData} />
     </div>
