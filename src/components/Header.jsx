@@ -45,24 +45,23 @@ const Header = () => {
       </div>
       <div className=" col-span-10 justify-center self-center">
         <div className="grid place-items-center">
-          <div className="">
+          <div className="relative">
             <input
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-[40rem] border rounded-l-full"
+              className="w-[30rem] border rounded-l-full pl-2"
               type="text"
             />
             <button className="pl-1 pr-4 bg-gray-100 rounded-r-full">🔍</button>
+            <div className="absolute z-20 top-full left-0">
+              <ul className="z-20 fixed over shadow-slate-400 rounded-full ">
+                {suggestions.map((s) => (
+                  <li className="w-[30rem] bg-white pb-[3px] pl-1 pt-1 border hover:cursor-default hover:bg-gray-200">
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div className="">
-          <ul className="z-20 fixed over shadow-slate-400 rounded-full ">
-            {suggestions.map((s) => (
-              <li className="w-[22rem] bg-white pb-[3px] pl-1 pt-1 border hover:cursor-default hover:bg-gray-200">
-                {s}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
       <div className="self-center col-span-1">
