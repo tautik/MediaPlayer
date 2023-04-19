@@ -44,14 +44,17 @@ const Header = () => {
         <h1 className="m-4 font-Poppins text-xl">VisionaryPlayer</h1>
       </div>
       <div className=" col-span-10 justify-center self-center">
-        <div className="">
-          <input
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className=" w-[22rem]  border"
-            type="text"
-          />
-          <button className="pl-1 pr-4 bg-gray-100 rounded-r-full">🔍</button>
+        <div className="grid place-items-center">
+          <div className="">
+            <input
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-[40rem] border rounded-l-full"
+              type="text"
+            />
+            <button className="pl-1 pr-4 bg-gray-100 rounded-r-full">🔍</button>
+          </div>
         </div>
+
         <div className="">
           <ul className="z-20 fixed over shadow-slate-400 rounded-full ">
             {suggestions.map((s) => (
