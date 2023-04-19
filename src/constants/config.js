@@ -18,11 +18,33 @@ export const commentsData = [
         replies: [],
       },
       {
-        id: "014",
+        id: "015",
 
-        name: "Apurva Deo",
+        name: "Lavanya Kannan",
         text: "You’re working so hard, may all your wishes come true. ",
         replies: [],
+      },
+      {
+        id: "016",
+
+        name: "Nisha Pall",
+        text: "You’re working so hard, may all your wishes come true. ",
+        replies: [
+          {
+            id: "017",
+
+            name: "Apurva Deo",
+            text: "You’re working so hard, may all your wishes come true. ",
+            replies: [],
+          },
+          {
+            id: "018",
+
+            name: "Diksha Sama",
+            text: "You’re working so hard, may all your wishes come true. ",
+            replies: [],
+          },
+        ],
       },
     ],
   },
