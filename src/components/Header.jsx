@@ -41,7 +41,9 @@ const Header = () => {
           src={HamburgerIcon}
           alt=""
         />
-        <h1 className="m-4 font-Poppins text-xl">VisionaryPlayer</h1>
+        <Link to="/">
+          <h1 className="m-4 font-Poppins text-xl">VisionaryPlayer</h1>
+        </Link>
       </div>
       <div className=" col-span-10 justify-center self-center">
         <div className="grid place-items-center">
