@@ -7,7 +7,7 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="col-span-2 p-6 bg-gray-50 flex flex-col">
+    <div className="col-span-2 w-[30%]  p-6 bg-gray-50 flex flex-col">
       <div className="font-semibold flex-1">
         <ul className="pt-2">
           <li>

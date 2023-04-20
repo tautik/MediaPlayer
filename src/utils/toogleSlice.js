@@ -12,8 +12,11 @@ const toogleSlice = createSlice({
     offToggle: (state) => {
       state.toogleState = false;
     },
+    onToogle: (state) => {
+      state.toogleState = true;
+    },
   },
 });
 
-export const { toogleMenu, offToggle } = toogleSlice.actions;
+export const { toogleMenu, offToggle, onToogle } = toogleSlice.actions;
 export default toogleSlice.reducer;
