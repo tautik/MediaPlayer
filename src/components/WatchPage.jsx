@@ -9,7 +9,7 @@ import ChatBox from "./ChatBox";
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
   const params = searchParams.get("v");
-  console.log(params);
+
   //dispatching to always keep off sidebar when page opens
   const dispatch = useDispatch();
   useEffect(() => {
