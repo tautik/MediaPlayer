@@ -8,7 +8,7 @@ const VideoContainer = () => {
     fetchData();
   }, []);
   const fetchData = async () => {
-    const data = await fetch(youtubeAPI);
+    const data = await fetch(youtubeAPI, { mode: "cors" });
     const json = await data.json();
     setVideo(json.items);
   };
